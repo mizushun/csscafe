@@ -1,5 +1,5 @@
 @import "./lib/sanitize";
-:root, html, body{
+:root, html, body {
     background-color: $color-base;
     color: $color-main-text;
     width: 100%;
@@ -12,11 +12,11 @@ li{
     list-style-type: none;
 }
 
-a{
+a {
     color: $color-main-text;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: $color-link;
 }

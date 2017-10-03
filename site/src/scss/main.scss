@@ -1,4 +1,6 @@
-@import "./base/reset";
 @import "./components/common/header";
+@import "./modules/common/header";
+//メニュー
+@import "./modules/common/menu";
 @import "./base/variables";
 @import "./base/reset";
