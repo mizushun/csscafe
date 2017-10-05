@@ -14,9 +14,9 @@ li{
 
 a {
     color: $color-main-text;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
     color: $color-link;
 }
