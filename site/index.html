@@ -24,27 +24,30 @@
             </nav>
         </header>
 
-    <div class="ImageSlide">
-        <ul class="ImageSlide__main">
-            <li class="ImageSlide__item">
+    <div class="ImageSlide Section">
+        <ul id="Slide" class="ImageSlide__main">
+            <li class="ImageSlide__item js-slide-item">
                 <a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide1.jpg" alt="about our tea" width="1180" height="490"></a>
             </li>
             <!-- /.ImageSlide_img -->
-            <li class="ImageSlide__item">
+            <li class="ImageSlide__item js-slide-item">
                 <a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide2.jpg" alt="about our coffee" width="1180" height="490">
             </li>
             <!-- /.ImageSlide_img -->
-            <li class="ImageSlide__item">
+            <li class="ImageSlide__item js-slide-item">
                 <a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide3.jpg" alt="about our foods" width="1180" height="490">
             </li>
             <!-- /.ImageSlide_img -->
         </ul>
         <div class="ImageSlide__sub">
+            <span class="ImageSlide__dot js-slide-point">image1</span>
+            <span class="ImageSlide__dot js-slide-point">image2</span>
+            <span class="ImageSlide__dot js-slide-point">image3</span>
         </div>
         <!-- /.ImageSlide_sub -->
     </div>
     <!-- /.imageSlide -->
-    <section class="l-column">
+    <section class="Section l-column">
         <div class="l-row">
         <div class="EntryPanel l-halfColumn">
             <div class="EntryPanel__sub">
@@ -83,11 +86,33 @@
     </div>
     </section>
         <!-- /.EntryPanel -->
+    <section class="Section">
+        <h2 class="sectionLabel l-column">Content</h2>
+        <!-- /.sectionLabel -->
+        <div class="l-halfTile">
+            <a href="#" class="OverlayPanel">
+                <h3 class="OverlayPanel__head">Drink Menu</h3>
+                <!-- /.OverlayPanel__head -->
+                <p class="OverlayPanel__body">
+                    定番メニューから、季節に合わせた商品まで品揃え豊富に取り揃えております。あなたのお気に入りを見つけましょう。
+                </p>
+                <!-- /.OverlayPanel__body -->
+            </a>
+            <a href="#" class="OverlayPanel">
+                <h3 class="OverlayPanel__head">Drink Menu</h3>
+                <!-- /.OverlayPanel__head -->
+                <p class="OverlayPanel__body">
+                    サンドイッチ、ケーキ、パスタ、当店自慢のコーヒーと一緒にどうぞ。
+                </p>
+                <!-- /.OverlayPanel__body -->
+            </a>
+        </div>
+    </section>
     </div>
     <!-- /#wrapper -->
     <script src="./dist/js/main.min.js"></script>
     <script>
-        //imageSlide('Slide',2);
+        imageSlide('Slide',2);
     </script>
 </body>
 </html>
