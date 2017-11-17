@@ -1,0 +1,28 @@
+@mixin title-font() {
+    font-family: $font-sub;
+    font-weight: 400;
+}
+@mixin menu-font() {
+    font-family: $font-sub;
+    font-weight: 400;
+}
+
+@mixin example($defaultWidth:400) {
+    width: $defaultWidth+px;
+}
+
+P {
+    @include example(500);
+}
+
+@mixin mq-sp($max: $sp-max-width) {
+    @media only screen and (max-width: #{$max}) {
+        @content;
+    }
+}
+
+@mixin mq-pc($min: $pc-min-width) {
+    @media only screen and (min-width: #{$min}) {
+        @content;
+    }
+}

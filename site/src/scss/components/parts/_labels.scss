@@ -9,6 +9,11 @@
     font-size: 22px;
     line-height: 1;
 
+.logo {
+    font-size: 26px;
+    @include menu-font;
+}
+
     &::before,
     &::after {
         content: '';
@@ -23,4 +28,25 @@
     &::after {
         margin-left: 22px;
     }
+}
+
+//記事の大見出し
+.articleLabelL {
+    padding: 0 0 20px;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+//記事の中見出し
+.articleLabelM {
+    padding: 40px 0 20px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+//記事の小見出し
+.articleLabelS {
+    padding: 40px 0 20px;
+    font-weight: normal;
+    font-size: 26px;
 }

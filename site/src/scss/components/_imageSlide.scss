@@ -20,6 +20,9 @@
         top: -40px;
         display: flex;
         justify-content: center;
+        @include mq-sp {
+            top: -20px;
+        }
     }
     &__dot {
         display: block;
@@ -37,6 +40,17 @@
         }
         &.isActive {
             background: $color-black;
+        }
+        &:hover {
+            background: rgba($color-black, 0.7);
+        }
+        &.isActive {
+            background: $color-black;
+        }
+        @include mq-sp {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
         }
     }
 }
